@@ -1,13 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mybasic</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        #demo{
+            color:white;
+            background-color: lightslategray;
+            width: fit-content;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 25px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <!--Inline Jascript-->
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Date</button>
+
+    <!--Internal javascript-->
+    <script>
+          let a=23;//decalration
+          a=78;//define
+
+
+          var myvar=45;
+          myvar=100;//define
+          document.write("<br><br>"+a);    
+          document.write("<br><br>"+myvar);      
+
+          const data=1500;
+          document.write("<br><br>"+data    );    
+          
+          window.alert('Warning')
+
+          let n1=23,n2=89;
+          console.log(n1+n2)
+        
+    </script>
+</body>
 </html>
